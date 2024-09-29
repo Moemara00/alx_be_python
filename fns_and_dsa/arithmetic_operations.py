@@ -1,5 +1,5 @@
 
-def perform_operation(num1,num2,operation): 
+def perform_operation(num1,num2,operation):  # perform_operation
     
     if operation == "add":
         return num1 + num2
@@ -16,3 +16,5 @@ def perform_operation(num1,num2,operation):
     else :
         return "Invalid Operation"
     
+
+print(perform_operation(10,100,"multiply"))
