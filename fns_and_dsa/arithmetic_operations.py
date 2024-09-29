@@ -16,4 +16,3 @@ def perform_operation(num1,num2,operation):
         case _ :
             return ("Invalid")
         
-print(perform_operation(1,20,"add"))
