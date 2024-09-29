@@ -12,17 +12,18 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
         if choice == '1':
-            add_item = input("Enter an item to add")
-            shopping_list.append(add_item)
+            item = input("Enter an item to add")
+            shopping_list.append(item)
+            print(f"The {item} added successfully")
         elif choice == '2':
-            remove_item = input("Enter an item to remove")
-            if remove_item in shopping_list:
-                shopping_list.remove(remove_item)
+            item = input("Enter an item to remove")
+            if item in shopping_list:
+                shopping_list.remove(item)
+                print(f"{item} has been removed")
             else:
                 print("this item is not found in the list")
         elif choice == '3':
-            for item in shopping_list:
-                print(item)
+            print(f"the shopping list is {shopping_list}")
 
         elif choice == '4':
             print("Goodbye!")
@@ -32,4 +33,5 @@ def main():
 
 
 
-main()
+if __name__ == "__main__":
+    main()
