@@ -29,9 +29,9 @@ class Library:
 
     def list_books(self):
     
-            print(f"Book: {classic_book.title} {classic_book.author}")
+            print(f"Book: {classic_book.title} by {classic_book.author}")
             print(f"EBook: {digital_novel.title} by {digital_novel.author}, File Size: {digital_novel.file_size}KB")
-            print(f"PrintBook: {paper_novel.title} by {paper_novel.author}, Page Count:{paper_novel.page_count}")            
+            print(f"PrintBook: {paper_novel.title} by {paper_novel.author}, Page Count: {paper_novel.page_count}")            
 
 
 classic_book = Book("Pride and Prejudice", "Jane Austen")
